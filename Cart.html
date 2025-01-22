@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="Cart.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Your Cart</h1>
+    </header>
+
+    <!-- Cart Section -->
+    <section id="cart">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <div id="cart-message" class="cart-message">Your cart is empty.</div>
+
+            <div class="cart-container" id="cart-items">
+                <!-- Dynamic cart items will go here -->
+            </div>
+
+            <div class="cart-total">
+                <h3>Total: $<span id="total-price">0.00</span></h3>
+                <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+                <button id="clear-cart-btn">Clear Cart</button>
+            </div>
+
+            <div id="thanks-message" class="thanks-message"></div>
+        </div>
+    </section>
+
+    <script src="Cart.js"></script>
+</body>
+</html>

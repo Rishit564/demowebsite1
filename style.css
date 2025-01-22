@@ -1,0 +1,930 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Overall Header Styles */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 20px 5%;
+    border-bottom: 2px solid #444;
+    position: fixed; /* Fixes the header at the top */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensures the header stays on top */
+    transition: all 0.3s ease; /* Smooth transition for resizing */
+}
+
+/* Navbar Styles */
+.nav-container {
+    flex: 3;
+    text-align: right;
+}
+
+#navbar {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+/* Navbar Items */
+#navbar li {
+    position: relative;
+}
+
+/* Links Styling */
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 18px;
+    border-radius: 30px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+#navbar a:hover {
+    background-color: #ff4081;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Active Link Styling */
+#navbar a.active {
+    background-color: #ff4081;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Cart Icon Styling */
+.cart-icon {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+}
+
+.cart-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Shrink Header on Scroll */
+.shrink #header {
+    padding: 10px 5%;
+}
+
+.shrink #navbar a {
+    font-size: 14px; /* Smaller font size for the links */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        padding: 15px 5%;
+    }
+    
+    .nav-container {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    #navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Hero Section Styling */
+#hero {
+    position: relative;
+    background-image: url('https://www.datocms-assets.com/70938/1671614839-lacoste-holiday-campaign.png?auto=format&fit=max&w=1200'); /* Add your image URL here */
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    padding: 120px 15%; /* Padding adjusted for more space */
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.6); /* Darkens the background for better text contrast */
+    margin-top: 80px; /* Adds margin to create space below the fixed header */
+}
+
+
+
+
+
+
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Login Section */
+#login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+}
+
+.login-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+#login h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Password Container */
+.password-container {
+    position: relative;
+}
+
+.password-container i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Action buttons */
+.actions {
+    margin-top: 20px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #088178;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #064f44;
+}
+
+.forgot-password {
+    display: inline-block;
+    margin-top: 10px;
+    color: #088178;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Signup Section */
+.signup-section {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-section a {
+    color: #088178;
+    text-decoration: none;
+}
+
+.signup-section a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero Content Styling */
+.hero-content {
+    max-width: 900px;
+    text-align: center;
+}
+
+#hero h4 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+#hero h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 10px 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+#hero button {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ff4081;
+    border: none;
+    color: pink;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#hero button:hover {
+    background-color: #ff1e6a;
+    transform: translateY(-5px); /* Lift effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #hero {
+        padding: 100px 10%;
+    }
+
+    #hero h2 {
+        font-size: 30px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    #hero button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Reset and universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Section container */
+#feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 40px 20px;
+    background: #222; /* Background gradient */
+}
+
+/* Individual feature box styling */
+#feature .box {
+    width: 220px;
+    text-align: center;
+    padding: 25px 15px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover effect */
+#feature .box:hover {
+    transform: translateY(-10px); /* Lift the box slightly on hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Box image styling */
+#feature .box img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Smooth zoom on hover */
+}
+
+#feature .box:hover img {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Heading styling */
+#feature .box h6 {
+    color: #088178;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    background-color: #fddde4;
+    padding: 8px 10px;
+    border-radius: 4px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#feature .box:hover h6 {
+    color: palevioletred; /* Golden color on hover */
+    opacity: 1;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+    #feature {
+        flex-direction: row; /* 2-3 items per row */
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    #feature {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #feature .box {
+        width: 80%; /* Ensures it fits on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #feature .box {
+        width: 100%; /* Stacks boxes for mobile */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#product1{
+     text-align: center;
+     
+}
+#product1 .pro-container{
+    
+
+        position: relative;
+        background-image: uurl("https://i.ytimg.com/vi/UT7oz7THA4I/maxresdefault.jpg");
+        background-size: cover;
+        background-position: center;
+    
+      
+      
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+        z-index: 0; /* Make sure it stays behind other content */
+      
+      
+      
+        position: relative;
+        z-index: 1; /* Ensures content (like product images) stays above the overlay */
+    
+      
+      
+    
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap
+    ;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid#cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    transition: 0.02s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+#product .pro img{
+    width: 100%;
+    height: 10vh;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 5px 0;
+
+}
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 15px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+}
+#product .pro .des .rating{
+    font-size: 12px;
+    color: rgb(228,214,24);
+}
+#product1 .pro .des h4{
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius:50px ;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+
+
+
+/* Banner Container Styles */
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://idme-hosted-pages.s3.amazonaws.com/hero_images/2987/1200x450_v1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 80px;
+    animation: scrollBackground 8s linear infinite;
+    position: relative;
+}
+
+/* Scrolling Effect for the Background */
+@keyframes scrollBackground {
+    0% {
+        background-position: center bottom;
+    }
+    100% {
+        background-position: center top;
+    }
+}
+
+/* Text Styling */
+#banner h4 {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#banner h2 {
+    color: black;
+    font-size: 36px;
+    padding: 15px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#banner h2 span {
+    color: red;
+}
+
+/* Button Styling */
+#banner button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+#banner button:hover {
+    background: pink;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #banner h2 {
+        font-size: 28px;
+    }
+    #banner button {
+        font-size: 14px;
+        padding: 12px 25px;
+    }
+}
+
+
+
+
+
+
+
+/* Container styles for the banners */
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between the banners */
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+/* Styling for each banner box */
+#sm-banner .banner-box,
+#sm-banner .banner-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center;
+    width: 48%; /* Ensure the banners take up half width on larger screens */
+    height: 50vh; /* Banner height */
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Shadow for better depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Banner images for better responsiveness (initial image will be overwritten by JS) */
+#sm-banner .banner-box {
+    background-image: url("https://image-cdn.hypb.st/https://hypebeast.com/image/2023/04/lacoste-netflix-collaboration-collection-release-info-tw.jpg?w=960&cbr=1&q=90&fit=max");
+}
+
+#sm-banner .banner-box2 {
+    background-image: url("https://static.theceomagazine.net/wp-content/uploads/2018/11/28082514/lacoste-1.jpg");
+}
+
+/* Hover effect for banner boxes */
+#sm-banner .banner-box:hover,
+#sm-banner .banner-box2:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4); /* Increased shadow on hover */
+}
+
+/* Text Styling */
+#sm-banner h4 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+#sm-banner .banner-box2 h4 {
+    color: red;
+}
+
+#sm-banner h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    opacity: 0.9;
+    text-transform: uppercase;
+}
+
+#sm-banner .banner-box2 h2 {
+    color: red;
+}
+
+#sm-banner span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* Styling for the button */
+#sm-banner button.white {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 20px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+#sm-banner .banner-box2 button.white {
+    color: red;
+    border: 1px solid red;
+}
+
+/* Hover effects for buttons */
+#sm-banner .banner-box:hover button.white {
+    background-color: #088178;
+    color: #fff;
+    border-color: #088178;
+}
+
+#sm-banner .banner-box2:hover button.white {
+    background-color: red;
+    color: #fff;
+    border-color: red;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+    #sm-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sm-banner .banner-box,
+    #sm-banner .banner-box2 {
+        width: 90%; /* Make banners take full width on smaller screens */
+        height: 40vh; /* Slightly smaller height on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    #sm-banner .banner-box,
+    #sm-banner .banner-box2 {
+        width: 100%; /* Full width for mobile */
+        height: 30vh; /* Adjust height for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Banner Container Styles */
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 80px;
+    gap: 20px; /* Space between each banner box */
+}
+
+/* Banner Box Styles */
+#banner3 .banner-box,
+#banner3 .banner-box2,
+#banner3 .banner-box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center;
+    width: 30%; /* Adjust width for better layout */
+    min-height: 250px; /* Set a consistent height */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    text-align: left;
+}
+
+/* Background images for each banner box */
+#banner3 .banner-box {
+    background-image: url("https://imageapac1.lacoste.com/dw/image/v2/BBCL_PRD/on/demandware.static/-/Library-Sites-LacosteContent/default/dwa2faa108/FW19/mods/brand-section/lacosteinside-collabs/lacosteinside-collabs-push-component-tile-basic-5-desktop.jpg?imwidth=840&impolicy=custom");
+}
+
+#banner3 .banner-box2 {
+    background-image: URL("https://www.cssdesignawards.com/cdasites/2022/202210/20221013144501.jpg");
+}
+
+#banner3 .banner-box3 {
+    background-image: url("https://mobilemarketingmagazine.com/wp-content/uploads/Lacoste_X_Emperia_X_UNDW2.jpg");
+}
+
+/* Overlay Effect for Better Text Visibility */
+#banner3 .banner-box::before,
+#banner3 .banner-box2::before,
+#banner3 .banner-box3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+/* Hover Effects for the Banner Boxes */
+#banner3 .banner-box:hover,
+#banner3 .banner-box2:hover,
+#banner3 .banner-box3:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Typography Styling */
+#banner3 h2 {
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    opacity: 0.9;
+    text-transform: uppercase;
+    z-index: 2; /* Keep text above the overlay */
+}
+
+#banner3 h3 {
+    color: #ec544e;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    z-index: 2; /* Keep text above the overlay */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    #banner3 {
+        flex-direction: column;
+        padding: 20px 40px;
+    }
+
+    #banner3 .banner-box,
+    #banner3 .banner-box2,
+    #banner3 .banner-box3 {
+        width: 100%; /* Full width on smaller screens */
+        min-height: 200px; /* Adjust height */
+    }
+
+    #banner3 h2 {
+        font-size: 24px;
+    }
+
+    #banner3 h3 {
+        font-size: 16px;
+    }
+}
+
+/* Add some padding for the text inside the boxes */
+#banner3 .banner-box h2, #banner3 .banner-box2 h2, #banner3 .banner-box3 h2 {
+    margin-top: 0;
+}
+
+#banner3 .banner-box h3, #banner3 .banner-box2 h3, #banner3 .banner-box3 h3 {
+    margin-top: 5px;
+}

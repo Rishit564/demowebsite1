@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Lacoste</title>
+    <!-- Link to FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+    <!-- Link to your CSS file for styling -->
+    <link rel="stylesheet" href="style.css"> <!-- Ensure this path is correct -->
+</head>
+<body>
+
+    <!-- Login Section -->
+    <section id="login">
+        <div class="login-container">
+            <h2>Login to Your Account</h2>
+            <!-- Form for login -->
+            <form action="your-login-handler.php" method="POST">
+                <!-- Email input -->
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <!-- Password input -->
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" required placeholder="Enter your password">
+                        <i id="toggle-password" class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-- Login button -->
+                <div class="actions">
+                    <button type="submit" class="login-btn">Login</button>
+                    <a href="forgot-password.html" class="forgot-password">Forgot Password?</a>
+                </div>
+            </form>
+            <!-- Sign-up section for new users -->
+            <div class="signup-section">
+                <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript to toggle password visibility -->
+    <script>
+        const togglePassword = document.getElementById('toggle-password');
+        const passwordInput = document.getElementById('password');
+
+        togglePassword.addEventListener('click', function () {
+            const type = passwordInput.type === 'password' ? 'text' : 'password';
+            passwordInput.type = type;
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
+
+</body>
+</html>
+

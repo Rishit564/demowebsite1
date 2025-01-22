@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+       
+
+</head>
+<body>
+
+    <section id="header">
+        <div class="logo-container">
+            <a href="index.html" id="logo"><img src="https://tse4.mm.bing.net/th?id=OIP.qZU6-A--vkXcfo7sKjnHzAAAAA&pid=Api&P=0&h=180" width="100%" height="50mm" alt="Website Logo"></a>
+        </div>
+        <div class="nav-container">
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+                <li><a href="Wishlist.html"><i class="fa fa-heart" aria-hidden="true"></i> Wishlist</a></li>
+                <li><a href="Cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    
+
+    
+
+    
+    
+    
+    <section id="hero">
+        <div class="hero-content">
+            <h4>Trade-in-offer</h4>
+            <h2>Super Value Deals</h2>
+            <h2>On All Products</h2>
+            <p>Save more with coupons & up to 70% off</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+
+    
+
+    <section id="feature" class="section p1">
+        <div class="box">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.-U2Z6VH-00tSOPxdz8jMsgHaF7&pid=Api&P=0&h=180" alt="Free Shipping">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="box">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/online-order-2750347-2294212.png" alt="Online Order">
+            <h6>Online Order</h6>
+        </div>
+        <div class="box">
+            <img src="https://static.vecteezy.com/system/resources/previews/015/441/370/non_2x/saving-money-save-box-and-jar-collection-set-free-png.png" height="120" alt="Save Money">
+            <h6>Save Money</h6>
+        </div>
+        <div class="box">
+            <img src="https://t3.ftcdn.net/jpg/02/95/65/00/360_F_295650090_kEtvXGeZtWWBf28gNUmZkzFWCkiODSOo.jpg" alt="Promotions">
+            <h6>Promotions</h6>
+        </div>
+        <div class="box">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.3Oo6uxgUqpSSVTGKksPChAHaEV&pid=Api&P=0&h=180" alt="Happy Sell">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="box">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.slhaMpwPPZbK0hmONu9ETwHaHD&pid=Api&P=0&h=180" height="100" alt="24/7 Support">
+            <h6>24/7 Support</h6>
+        </div>
+
+    </section><br><br>
+    
+
+
+
+    <section id="product1"  class="section-p1">
+        <h1>Featured Products</h1>
+        <p>Summer Collection New Morden Design</p>
+        <br><br>
+
+
+    
+        <div class="pro-container">
+            <!-- Product 1 -->
+            <div class="pro" id="product1">
+              <img src="https://www.sportsdirect.com/images/imgzoom/33/33116206_xxl.jpg" height="200vh" width="80%" style="border-radius:20px;">
+              <div class="des">
+                <span>Lacoste</span>
+                <h5>Polo T-shirt</h5>
+                <div class="star">
+                  <div id="rating1" style="font-size:15px; cursor:pointer;" onclick="updateRating('rating1', event)">
+                    <span class="star" data-value="1" style="transform:scale(1.5);">&#9733;</span>
+                    <span class="star" data-value="2" style="transform:scale(1.5);">&#9733;</span>
+                    <span class="star" data-value="3" style="transform:scale(1.5);">&#9733;</span>
+                    <span class="star" data-value="4" style="transform:scale(1.5);">&#9733;</span>
+                    <span class="star" data-value="5" style="transform:scale(1.5);">&#9733;</span>
+                  </div>
+                  <div id="ratingValue1">Please Select Rating</div>
+                </div>
+                <h4>$40</h4>
+                <button class="add-to-cart-btn" data-product-id="1" data-product-name="Polo T-shirt" data-product-price="40">Add to Cart</button>
+              </div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMTiZfPOZXZFEGFUzj_p8vglaC-ZVNTrlQw&s" alt="Add to Cart" class="cart" >
+            </div>
+          
+            <!-- Product 2 -->
+            <div class="pro"id="product2">
+              <img src="https://www.sportsdirect.com/images/imgzoom/33/33116206_xxl.jpg" height="200vh" width="80%" style="border-radius:20px;">
+              <div class="des">
+                <span>Lacoste</span>
+                <h5>Polo T-shirt</h5>
+                <div class="star">
+                  <div id="rating2" style="font-size:15px; cursor:pointer;" onclick="updateRating('rating2', event)">
+                    <span class="star" data-value="1" style="transform:scale(1.5);">&#9733;</span>
+                    <span class="star" data-value="2" style="transform:scale(1.5);">&#9733;</span>
+                    <span class="star" data-value="3" style="transform:scale(1.5);">&#9733;</span>
+                    <span class="star" data-value="4" style="transform:scale(1.5);">&#9733;</span>
+                    <span class="star" data-value="5" style="transform:scale(1.5);">&#9733;</span>
+                  </div>
+                  <div id="ratingValue2">Please Select Rating</div>
+                </div>
+                <h4>$40</h4>
+                <button class="add-to-cart-btn" data-product-id="1" data-product-name="Polo T-shirt" data-product-price="40">Add to Cart</button>
+              </div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMTiZfPOZXZFEGFUzj_p8vglaC-ZVNTrlQw&s" alt="Add to Cart" class="cart">
+            </div>
+          
+            <!-- Add more products as needed, ensuring unique IDs for each product's rating -->
+          
+            <div class="pro" id="product3">
+                <img src="https://www.sportsdirect.com/images/imgzoom/33/33116206_xxl.jpg" height="200vh" width="80%" style="border-radius:20px;">
+                <div class="des">
+                  <span>Lacoste</span>
+                  <h5>Polo T-shirt</h5>
+                  <div class="star">
+                    <div id="rating3" style="font-size:15px; cursor:pointer;" onclick="updateRating('rating3', event)">
+                      <span class="star" data-value="1" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="2" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="3" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="4" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="5" style="transform:scale(1.5);">&#9733;</span>
+                    </div>
+                    <div id="ratingValue3">Please Select Rating</div>
+                  </div>
+                  <h4>$40</h4>
+                  <button class="add-to-cart-btn" data-product-id="1" data-product-name="Polo T-shirt" data-product-price="40">Add to Cart</button>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMTiZfPOZXZFEGFUzj_p8vglaC-ZVNTrlQw&s" alt="Add to Cart" class="cart">
+              </div>
+
+
+
+              <div class="pro" id="product4">
+                <img src="https://www.sportsdirect.com/images/imgzoom/33/33116206_xxl.jpg" height="200vh" width="80%" style="border-radius:20px;">
+                <div class="des">
+                  <span>Lacoste</span>
+                  <h5>Polo T-shirt</h5>
+                  <div class="star">
+                    <div id="rating4" style="font-size:15px; cursor:pointer;" onclick="updateRating('rating4', event)">
+                      <span class="star" data-value="1" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="2" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="3" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="4" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="5" style="transform:scale(1.5);">&#9733;</span>
+                    </div>
+                    <div id="ratingValue4">Please Select Rating</div>
+                  </div>
+                  <h4>$40</h4>
+                  <button class="add-to-cart-btn" data-product-id="1" data-product-name="Polo T-shirt" data-product-price="40">Add to Cart</button>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMTiZfPOZXZFEGFUzj_p8vglaC-ZVNTrlQw&s" alt="Add to Cart" class="cart">
+              </div>
+
+
+
+
+              <div class="pro" id="product5">
+                <img src="https://www.sportsdirect.com/images/imgzoom/33/33116206_xxl.jpg" height="200vh" width="80%" style="border-radius:20px;">
+                <div class="des">
+                  <span>Lacoste</span>
+                  <h5>Polo T-shirt</h5>
+                  <div class="star">
+                    <div id="rating5" style="font-size:15px; cursor:pointer;" onclick="updateRating('rating5', event)">
+                      <span class="star" data-value="1" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="2" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="3" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="4" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="5" style="transform:scale(1.5);">&#9733;</span>
+                    </div>
+                    <div id="ratingValue5">Please Select Rating</div>
+                  </div>
+                  <h4>$40</h4>
+                  <button class="add-to-cart-btn" data-product-id="1" data-product-name="Polo T-shirt" data-product-price="40">Add to Cart</button>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMTiZfPOZXZFEGFUzj_p8vglaC-ZVNTrlQw&s" alt="Add to Cart" class="cart">
+              </div>
+
+
+
+
+              <div class="pro" id="product6">
+                <img src="https://www.sportsdirect.com/images/imgzoom/33/33116206_xxl.jpg" height="200vh" width="80%" style="border-radius:20px;">
+                <div class="des">
+                  <span>Lacoste</span>
+                  <h5>Polo T-shirt</h5>
+                  <div class="star">
+                    <div id="rating6" style="font-size:15px; cursor:pointer;" onclick="updateRating('rating6', event)">
+                      <span class="star" data-value="1" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="2" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="3" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="4" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="5" style="transform:scale(1.5);">&#9733;</span>
+                    </div>
+                    <div id="ratingValue6">Please Select Rating</div>
+                  </div>
+                  <h4>$40</h4>
+                  <button class="add-to-cart-btn" data-product-id="1" data-product-name="Polo T-shirt" data-product-price="40">Add to Cart</button>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMTiZfPOZXZFEGFUzj_p8vglaC-ZVNTrlQw&s" alt="Add to Cart" class="cart">
+              </div>
+
+
+
+
+              <div class="pro"id="product7">
+                <img src="https://www.sportsdirect.com/images/imgzoom/33/33116206_xxl.jpg" height="200vh" width="80%" style="border-radius:20px;">
+                <div class="des">
+                  <span>Lacoste</span>
+                  <h5>Polo T-shirt</h5>
+                  <div class="star">
+                    <div id="rating7" style="font-size:15px; cursor:pointer;" onclick="updateRating('rating7', event)">
+                      <span class="star" data-value="1" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="2" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="3" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="4" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="5" style="transform:scale(1.5);">&#9733;</span>
+                    </div>
+                    <div id="ratingValue7">Please Select Rating</div>
+                  </div>
+                  <h4>$40</h4>
+                  <button class="add-to-cart-btn" data-product-id="1" data-product-name="Polo T-shirt" data-product-price="40">Add to Cart</button>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMTiZfPOZXZFEGFUzj_p8vglaC-ZVNTrlQw&s" alt="Add to Cart" class="cart">
+              </div>
+
+
+
+
+
+              <div class="pro"id="product">
+                <img src="https://www.sportsdirect.com/images/imgzoom/33/33116206_xxl.jpg" height="200vh" width="80%" style="border-radius:20px;">
+                <div class="des">
+                  <span>Lacoste</span>
+                  <h5>Polo T-shirt</h5>
+                  <div class="star">
+                    <div id="rating8" style="font-size:15px; cursor:pointer;" onclick="updateRating('rating8', event)">
+                      <span class="star" data-value="1" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="2" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="3" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="4" style="transform:scale(1.5);">&#9733;</span>
+                      <span class="star" data-value="5" style="transform:scale(1.5);">&#9733;</span>
+                    </div>
+                    <div id="ratingValue8">Please Select Rating</div>
+                  </div>
+                  <h4>$40</h4>
+                  <button class="add-to-cart-btn" data-product-id="1" data-product-name="Polo T-shirt" data-product-price="40">Add to Cart</button>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMTiZfPOZXZFEGFUzj_p8vglaC-ZVNTrlQw&s" alt="Add to Cart" class="cart">
+              </div>
+
+
+
+
+          </div>
+
+
+          
+          
+          <script>
+            function updateRating(ratingId, event) {
+              const ratingValue = event.target.dataset.value;
+              const stars = document.querySelectorAll(`#${ratingId} .star`);
+              const ratingValueDiv = document.getElementById('ratingValue' + ratingId.charAt(ratingId.length - 1));
+          
+              // Update the selected rating value
+              ratingValueDiv.innerHTML = `You rated: ${ratingValue} stars`;
+          
+              // Update the color of the stars based on the selected rating
+              for (let i = 0; i < 5; i++) {
+                stars[i].style.color = i < ratingValue ? 'gold' : 'gray';
+              }
+            }
+          </script>
+          
+
+     </section>
+    
+
+     <section id="banner" class="section-m1">
+        <h4>Repair Services</h4>
+        <h2>Up to <span>70% Off</span>- All t-shirt & Accessories</h2>
+        <button class="normal">Explore More</button>
+    </section>
+
+    
+        <!-- Banner Section -->
+        <section id="sm-banner">
+            <div class="banner-box">
+                <h4>Collaboration Collection</h4>
+                <h2>Exclusive Collection</h2>
+                <span>Explore Now</span>
+                <button class="white">Learn More</button>
+            </div>
+            <div class="banner-box2">
+                <h4>Lacoste Style</h4>
+                <h2>New Arrivals</h2>
+                <span>Shop Now</span>
+                <button class="white">Explore</button>
+            </div>
+        </section>
+    
+      
+    
+<section id="banner3">
+    <div class="banner-box">
+        <h2>Lacoste Sportswear</h2>
+        <h3>Style and Comfort Combined</h3>
+    </div>
+    <div class="banner-box2">
+        <h2>Lacoste Lifestyle</h2>
+        <h3>Embrace the Elegance</h3>
+    </div>
+    <div class="banner-box3">
+        <h2>Lacoste Classic</h2>
+        <h3>Timeless Fashion</h3>
+    </div>
+</section>
+
+
+
+
+
+
+
+     <script src="script.js"></script>
+</body>
+</html>
